@@ -26,12 +26,18 @@
 
 .header__links-list-item {
   display: block;
+}
+
+.header__links-list-item_no-bullit {
+  list-style-type: none;  
+}
+
+.header__link {
   text-underline-offset: 4px;
   text-decoration: underline;
 }
 
-.header__links-list-item_no-bullit {
-  list-style-type: none;
+.header__link_active {
   text-decoration: none;
 }
 
@@ -51,19 +57,19 @@
 
 .address {
   width: 240px;
-  height: 98px;
+/*  height: 98px;*/
   text-align: left;
   font-style: normal;
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 24.3px;
-  text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;  
   text-underline-offset: 4px;
 }
 
-.address .a {
-  text-decoration: underline;
+.address__underline {
+  text-decoration: underline;  
 }
 
 .cover {
@@ -89,17 +95,19 @@
 }
 
 .aligned-text {
-  display: block;
-  padding-bottom: 20px;
+  display: block;  
 }
 
 .aligned-text_center {
   text-align: center;
-  padding-bottom: 20px;
 }
 
 .aligned-text_right {
   text-align: right;
+}
+
+.aligned-text_bottom {
+  padding-bottom: 20px;
 }
 
 .overlay {
@@ -118,7 +126,7 @@
   display: grid;
   grid-template-columns: 2fr 1fr;
   align-items: center;
-  padding: 86px 50px 0;
+  padding: 108px 50px 0;
 }
 
 .bet-button {
@@ -192,7 +200,7 @@
   z-index: 0;
 }
 
-.card__type__film {
+.card_type_film {
   background-image: url('../images/card-lot-01.jpg');
 }
 
@@ -302,8 +310,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: start;
-  width: 1100px;
-  min-height: 180px;
+ /* width: 1100px;
+  min-height: 180px;*/
   margin-top: 180px;
   padding: 0 50px;
 }
@@ -318,16 +326,19 @@
 }
 
 .footer__menu-list {
-  text-align: center;
-  text-underline-offset: 4px;
+  text-align: center;  
 }
 
 .footer__menu-list-item {
   list-style-type: none;
+  text-underline-offset: 4px;
+  text-decoration: underline;
 }
 
+/*footer__menu-link_active — активная ссылка меню (без подчёркивания);
+Данное имя класса было рекомендовано В Шаг 8.*/
 .footer__menu-link_active {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .footer__social-list {
